@@ -25,7 +25,7 @@ def checksetting(setting):
 #the home menu for settings
 def main():
     loadsettings()
-    print("Welcome to Settings, would you like to:\n(e)dit a setting\nread (a)bout your Harmony installation\nor go to (m)enu?")
+    print("Welcome to Settings, would you like to:\n(e)dit a setting\nread (a)bout your Cobblestone installation\nor go to (m)enu?")
     selection=input("| ")
     if selection=="s":
         editsetting()
@@ -62,5 +62,5 @@ def editsetting():
 
 #displays info about the build of Harmony
 def about():
-    print("Harmony code editor (stronge-harmony) version 0.3\nCopyright EyeScary Development Studios 2024")
+    print("Cobblestone notes (stronge-harmony) version 0.1\nCopyright EyeScary Development Studios / Pittab 2024")
     main()
