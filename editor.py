@@ -33,11 +33,12 @@ def printfile(extension, tofind=...):
    global lines
    try:
         openfile(filename)
+        cleaned=[line.strip() for line in lines]
    except FileNotFoundError:
        print(end="")
    else:
       linenum=1
-      lead.render(lines)
+      lead.render(cleaned)
 
 #deletes a line
 def removeLine(linenum):
